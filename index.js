@@ -1,0 +1,11 @@
+const express = require('express');
+const app = express();
+
+
+app.listen(3000, () => {
+    console.log("Hello World");
+});
+
+app.get('/', (request, response) => {
+    response.send("Hello from Node.js/Exress API!")
+});
